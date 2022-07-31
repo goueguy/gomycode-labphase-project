@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/easy-shop/static/css/main.935e4964.css",
+    "main.js": "/easy-shop/static/js/main.94a4816e.js",
+    "static/media/cover-image.png": "/easy-shop/static/media/cover-image.4d3d0300985e907e4edf.png",
+    "index.html": "/easy-shop/index.html",
+    "main.935e4964.css.map": "/easy-shop/static/css/main.935e4964.css.map",
+    "main.94a4816e.js.map": "/easy-shop/static/js/main.94a4816e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.935e4964.css",
+    "static/js/main.94a4816e.js"
+  ]
+}
