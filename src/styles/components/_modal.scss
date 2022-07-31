@@ -1,0 +1,141 @@
+.modal{
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index:1000;
+    transition: all .0.5s;
+    margin-bottom: 10px;
+    outline: 0;
+    .modal-container{
+        background-color: #fff;
+        z-index: 1500;
+        min-height: auto;
+        border-radius: 5px;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        transition: 0.5s;
+    }
+}
+.overflow{
+    overflow-y: hidden !important;
+}
+.modal-content{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    input{
+        &:focus{
+            border:1px solid $blue-color !important;
+            transition: all 0.5s ease;
+        }
+    }
+    .info{
+        padding-top: 15px;
+        a{
+            color:$pink-color;
+            text-decoration: none;
+        }
+    }
+    .authenfication-btn{
+        padding-top: 20px;
+        .social-network-btn{
+            border: none;
+            box-shadow: 0px 0px 9px 1px #ccc;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    }
+    .input-group{
+        margin:10px auto;
+    }
+    .form-group{
+        margin:10px auto;
+        .form-control{
+            border:1px solid #ccc;
+            width:100%;
+            padding: 12px;
+            border-radius: 4px;
+        }
+    }
+    .btn-block{
+        padding:15px 11rem;
+    }
+    .password-reset{
+        color:$pink-color;
+        padding-top:1rem;
+        text-decoration: none;
+    }
+    .btn-submit{
+        margin:10px auto;
+    }
+    .divider{
+        position: relative;
+        padding-top: 10px;
+        text-align: center;
+        color:  $black-color;
+        &::before{
+            position: absolute;
+            content: " ";
+            height: 2px;
+            width: 25%;
+            background: #ddd;
+            top:85%;
+            right:20%;
+        }
+        &::after{
+            position: absolute;
+            content: " ";
+            height: 2px;
+            width: 25%;
+            background: #ddd;
+            top:85%;
+            left:20%;
+        }
+    }
+}
+.modal-header{
+    border-bottom: 1px solid $gray-color;
+    padding: 10px 1px;
+    align-items: center;
+    .modal-title{
+        font-size:18px !important;
+    }
+    .btn-close{
+        padding: 5px;
+        cursor: pointer;
+        font-size: 20px;
+        background: transparent;
+        border: none !important;
+        outline: none !important;
+    }
+}
+.bg-white{
+    background: $white-color;
+}
+.bg-blue{
+    background: $facebook-blue;
+    color:$white-color;
+}
+.fa-google-plus-g{
+    color:$pink-color;
+    font-size: 20px;
+}
+.fa-facebook-f{
+    font-size: 20px;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+    transition: translate 0.9s ease-in .15s;
+}
+button{
+    border: none;
+}

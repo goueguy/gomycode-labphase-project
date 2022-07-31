@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/gomycode-labphase-project/static/css/main.3ace471c.css",
+    "main.js": "/gomycode-labphase-project/static/js/main.94a4816e.js",
+    "static/media/cover-image.png": "/gomycode-labphase-project/static/media/cover-image.4d3d0300985e907e4edf.png",
+    "index.html": "/gomycode-labphase-project/index.html",
+    "main.3ace471c.css.map": "/gomycode-labphase-project/static/css/main.3ace471c.css.map",
+    "main.94a4816e.js.map": "/gomycode-labphase-project/static/js/main.94a4816e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ace471c.css",
+    "static/js/main.94a4816e.js"
+  ]
+}

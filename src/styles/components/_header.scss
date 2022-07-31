@@ -1,0 +1,48 @@
+.cover{
+    background-image:url('../../assets/images/cover-image.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    margin-bottom:20px;
+    position:relative;
+    .content{
+        
+        .text{
+            p{
+                line-height: 1.8;
+            }
+            h1,p{
+                margin-bottom: 28px;
+            }
+            width: 45%;
+            position:absolute;
+            color:$white-color;
+            top:50%;
+            left:29.5%;
+            transform:translate(-50%, -50%)
+        }
+        .btn-achat{
+            margin-top: 20px;
+            background:$pink-color;
+            border:none;
+            padding:15px 45px;
+            cursor:pointer;
+            color:$white-color;
+            border-radius:4px;
+            position:absolute;
+            top:65%;
+            left:7%;
+            &:hover{
+                background:$white-color;
+                color:$pink-color;
+                border:2px solid $pink-color;
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+}
+.content{
+
+width: 45%;
+}
