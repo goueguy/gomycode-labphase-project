@@ -38,7 +38,7 @@ const LoginModal = () => {
                                 <button className="btn btn-block btn-active" type="button">Se connecter</button>
                             </div>
                             <div>
-                                <Link to={"#"} className="password-reset">Mot de passe oublié</Link>
+                                <Link to="/password-reset" className="password-reset">Mot de passe oublié</Link>
                             </div>
                         </div>
                     </div>
