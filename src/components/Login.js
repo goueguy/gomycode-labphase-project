@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import LoginModal from './LoginModal';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     const [modal,setModal] = useState(false)
@@ -11,10 +12,9 @@ const Login = () => {
     }
     return (
         <div className='m-2'>
-            <button className='btn' onClick={showModal}>Connexion</button>
-            {
-                (modal) ? <LoginModal/>:""
-            }
+            <Link to="#login">
+                <button className='btn'>Connexion</button>
+            </Link>
         </div>
         
     );

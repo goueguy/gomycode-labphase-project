@@ -49,9 +49,7 @@ const LoginModal = () => {
                 </div>
             </div>
             </div>
-            {
-                (modal) ? <RegisterModal/>:""
-            }
+            <RegisterModal/>
         </>
     );
 };
