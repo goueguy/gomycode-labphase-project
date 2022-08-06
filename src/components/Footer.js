@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 const Footer = () => {
     return (
         <footer>
-            <p className="copyright">Tous droits réservés par © <Link to={"#"}>LMC-shop</Link></p>
+            <p className="copyright">Tous droits réservés par © <Link to={"#"}>Easy-shop</Link></p>
         </footer>
     );
 };

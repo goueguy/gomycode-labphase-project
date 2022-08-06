@@ -1,24 +1,13 @@
-import React,{useState} from 'react';
-import { Link } from 'react-router-dom';
-import LoginModal from './LoginModal';
+import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 const RegisterModal = () => {
-    const [modal,setModal] = useState(false)
+    const navigate = useNavigate();
     const closeModal = ()=>{
-        //document.getElementById("login").classList.add("hide");
-        document.getElementById("register").classList.add("hide");
-        //setModal(true);
-        //document.getElementById("login").classList.add("hide");
         document.body.classList.remove("overflow");
+        navigate("/");
     }
-    const showModalRegister = ()=>{
-        console.log("ok")
-    }
-    const showLoginModal = (e)=>{
-        e.preventDefault();
-        setModal(true);
-        document.getElementById("register").remove();
-    }
+   
     return (
         <>
             <div className='modal' id="register">
@@ -30,7 +19,7 @@ const RegisterModal = () => {
                         </div>
                         <div className="modal-body">
                             <div className='info'>
-                                <p>Vous avez un compte ? <Link to={"#"} onClick={(e)=>showLoginModal(e)} className="font-weight-bold">Connectez-vous</Link></p>
+                                <p>Vous avez un compte ? <Link to="/login"  className="font-weight-bold">Connectez-vous</Link></p>
                             </div>
                             <div className="authenfication-btn d-flex justify-content-between">
                                 <button className='bg-white social-network-btn btn-google'><i className='fab fa-google-plus-g'></i> Connexion avec Google</button>
@@ -76,9 +65,6 @@ const RegisterModal = () => {
                     </div>
                 </div>
             </div>
-            {
-                (modal) ? <LoginModal/>:""
-            }
         </>
     );
 };

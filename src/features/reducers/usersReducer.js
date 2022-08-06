@@ -3,17 +3,17 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
     users:[],
-    currentModal:"login"
+    isOpen:true
 }
 const usersReducer = createSlice({
     name:"users",
     initialState,
     reducers:{
-        getUser:()=>{
-
+        setIsOpen:(state,action)=>{
+            state.isOpen=action.payload;
         }
     }
 });
 
-export const {getUser}= usersReducer.actions;
+export const {setIsOpen}= usersReducer.actions;
 export default usersReducer.reducer;

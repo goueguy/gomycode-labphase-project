@@ -10,7 +10,8 @@ const Navbar = () => {
     return (
         <>
             <SearchProduct/>
-            <img src={logo} alt="Logo"/>
+            {/*<img src={logo} alt="Logo"/>*/}
+            <h1>EASY SHOP</h1>
             <div className='d-flex justify-content-between'>
                 <Language/>
                 <Money/>
