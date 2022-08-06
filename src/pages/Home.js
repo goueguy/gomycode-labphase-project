@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Menu from '../components/Menu';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Card from '../components/Card';
 const Home = () => {
     return (
         <>
@@ -13,6 +14,9 @@ const Home = () => {
                 <Menu/>
             </nav>
             <Header/>
+
+            {/* CONTENT */}
+            <Card/>
             <Footer/>
         </>
     );
